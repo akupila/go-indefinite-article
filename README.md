@@ -8,7 +8,7 @@ Package `indefinite` resolves the indefinite article `a` or `an` for a given eng
 ## Install
 
 ```
-go get github.com/akupila/go-indefinite-article
+$ go get github.com/akupila/go-indefinite-article
 ```
 
 ## Example
@@ -18,6 +18,18 @@ article := indefinite.Article("unicorn")
 fmt.Println(article + " unicorn") // a unicorn
 ```
 See [indefinite_test.go][test] for more.
+
+## Binary
+
+A small command is available to test the functionality:
+
+```
+$ go get github.com/akupila/go-indefinite-article/cmd/indefinite-article
+$ indefinite-article university
+a university
+$ indefinite-article -only apple
+an
+```
 
 ---
 
